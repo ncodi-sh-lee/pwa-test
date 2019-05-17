@@ -1,0 +1,27 @@
+{
+  "name": "pwa-example-ch1",
+  "version": "1.0.0",
+  "description": "pwa-test",
+  "main": "service-worker.js",
+  "scripts": {
+    "test": "hello",
+    "start": "node app.js",
+    "postinstall": "bower install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ncodi-sh-lee/pwa-test.git"
+  },
+  "keywords": [
+    "pwa"
+  ],
+  "author": "sh.lee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ncodi-sh-lee/pwa-test/issues"
+  },
+  "homepage": "https://github.com/ncodi-sh-lee/pwa-test#readme",
+  "dependencies": {
+    "bower": "^1.8.8"
+  }
+}
