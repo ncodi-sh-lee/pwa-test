@@ -7,8 +7,8 @@ const cacheName = 'v2';
 const cacheList = [
   '/',
   '/manifest.json',
-  '/scripts/app.js',
-  '/styles/index.css',
+  '/js/app.js',
+  '/css/index.css',
   '/images/1.jpg',
   '/images/2.jpg',
   '/images/3.jpg',
