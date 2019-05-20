@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express();
 const PORT = process.env.PORT;
+const router = require('./router/app')(app);
 const path = require("path");
 
 app.get('/', function(req, res) { 
@@ -8,3 +9,4 @@ app.get('/', function(req, res) {
 });
 
 app.listen(PORT);
+app.use(express.static('public'));
