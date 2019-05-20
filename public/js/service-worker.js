@@ -5,15 +5,15 @@
 const _version = 'v4';
 const cacheName = 'v2';
 const cacheList = [
-  //'/',
-  'manifest.json',
-  'scripts/app.js',
-  'styles/index.css',
-  'images/1.jpg',
-  'images/2.jpg',
-  'images/3.jpg',
-  'images/4.jpg',
-  'images/5.jpg'
+  './',
+  './manifest.json',
+  './scripts/app.js',
+  './styles/index.css',
+  './images/1.jpg',
+  './images/2.jpg',
+  './images/3.jpg',
+  './images/4.jpg',
+  './images/5.jpg'
 ]
 
 const log = msg => {
