@@ -59,7 +59,7 @@
   
   // TODO: 아래에 서비스워커 등록
   if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('js/service-worker.js').then(regist => {
+    navigator.serviceWorker.register('/service-worker.js').then(regist => {
       console.log('Service Worker Registered');
 
       regist.addEventListener('updatefound', () => {
