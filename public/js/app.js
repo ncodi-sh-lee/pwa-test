@@ -59,21 +59,23 @@
   
   // TODO: 아래에 서비스워커 등록
   if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/service-worker.js').then(regist => {
-      console.log('Service Worker Registered');
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/service-worker.js').then(regist => {
+        console.log('Service Worker Registered');
 
-      regist.addEventListener('updatefound', () => {
-        const newWorker = regist.installing;
-        console.log('Service Worker update found!');
+        regist.addEventListener('updatefound', () => {
+          const newWorker = regist.installing;
+          console.log('Service Worker update found!');
 
-        newWorker.addEventListener('statechange', function () {
-          console.log('Service Worker state changed:', this.state);
+          newWorker.addEventListener('statechange', function () {
+            console.log('Service Worker state changed:', this.state);
+          });
         });
       });
-    });
-
-    navigator.serviceWorker.addEventListener('controllerchange', () => {
-      console.log('Controller changed');
+      
+      navigator.serviceWorker.addEventListener('controllerchange', () => {
+        console.log('Controller changed');
+      });
     });
   }
 
